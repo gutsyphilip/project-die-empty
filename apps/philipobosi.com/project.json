@@ -9,7 +9,7 @@
       "defaultConfiguration": "production",
       "options": {
         "root": "apps/philipobosi.com",
-        "outputPath": "dist/apps"
+        "outputPath": "dist/apps/me"
       },
       "configurations": {
         "production": {}
