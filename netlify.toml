@@ -1,5 +1,5 @@
 [[redirects]]
-  from = "/me/*"
-  to = "dist/apps/me/.next"
+  from = "/founders-dao/*"
+  to = "/dist/apps/founders-dao/index.html"
   status = 200
-  force = true
+
