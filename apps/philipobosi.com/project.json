@@ -1,0 +1,54 @@
+{
+  "root": "apps/philipobosi.com",
+  "sourceRoot": "apps/philipobosi.com",
+  "projectType": "application",
+  "targets": {
+    "build": {
+      "executor": "@nrwl/next:build",
+      "outputs": ["{options.outputPath}"],
+      "defaultConfiguration": "production",
+      "options": {
+        "root": "apps/philipobosi.com",
+        "outputPath": "dist/apps/philipobosi.com"
+      },
+      "configurations": {
+        "production": {}
+      }
+    },
+    "serve": {
+      "executor": "@nrwl/next:server",
+      "options": {
+        "buildTarget": "philipobosi.com:build",
+        "dev": true
+      },
+      "configurations": {
+        "production": {
+          "buildTarget": "philipobosi.com:build:production",
+          "dev": false
+        }
+      }
+    },
+    "export": {
+      "executor": "@nrwl/next:export",
+      "options": {
+        "buildTarget": "philipobosi.com:build:production"
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/apps/philipobosi.com"],
+      "options": {
+        "jestConfig": "apps/philipobosi.com/jest.config.js",
+        "passWithNoTests": true
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["apps/philipobosi.com/**/*.{ts,tsx,js,jsx}"]
+      }
+    }
+  },
+  "tags": []
+}

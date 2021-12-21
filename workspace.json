@@ -1,0 +1,7 @@
+{
+  "version": 2,
+  "projects": {
+    "philipobosi.com": "apps/philipobosi.com",
+    "philipobosi.com-e2e": "apps/philipobosi.com-e2e"
+  }
+}
