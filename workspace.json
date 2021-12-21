@@ -1,6 +1,7 @@
 {
   "version": 2,
   "projects": {
+    "founders-dao": "apps/founders-dao",
     "philipobosi.com": "apps/philipobosi.com"
   }
 }
