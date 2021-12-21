@@ -1,1 +1,5 @@
-/founders-dao/*  /dist/apps/founders-dao/index.html  200!
+[[redirects]]
+  from = "/founders-dao/*"
+  to = "/dist/apps/founders-dao/index.html"
+  status = 200
+  force = true
