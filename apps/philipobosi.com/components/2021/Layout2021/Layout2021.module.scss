@@ -1,0 +1,42 @@
+@import "../../../styles/breakpoint";
+@import "../../../styles/colors";
+@import "../../../styles/helpers";
+@import "../../../styles/typography";
+
+.Layout2021{
+  @include container;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 32px;
+
+  @include md(){
+    grid-template-columns: 1fr 1.5fr; 
+    height: calc(100vh - 200px);
+    max-width: 1089px;
+  }
+
+  &_left{
+    max-width: 447px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    &_ttl{
+      @include display-1;
+      position: relative;
+      &::after{
+        color: transparent;
+        content: "2021.";
+        position: absolute;
+        left: 4px;
+        top: -44px;
+        -webkit-text-stroke: 1px #FFB968;
+      }
+    }
+  }
+  &_right{
+    height: 100%;
+    overflow-y: scroll;
+  }
+}

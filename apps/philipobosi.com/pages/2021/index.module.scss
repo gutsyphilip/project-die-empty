@@ -1,0 +1,11 @@
+@import "../../styles/colors";
+@import "../../styles/helpers";
+@import "../../styles/typography";
+
+.Page2021{
+  &_intro{
+    @include body-2;
+    font-style: italic;
+    padding: 0 32px;
+  }
+}

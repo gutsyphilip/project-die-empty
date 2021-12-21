@@ -1,0 +1,1 @@
+export {default as Layout2021} from './Layout2021'

@@ -1,0 +1,110 @@
+@import "../../styles/colors";
+@import "../../styles/helpers";
+@import "../../styles/typography";
+
+.IndexPage{
+  display: grid;
+  grid-template-columns: 1fr;
+
+  @include lp(){
+    position: relative;
+  }
+
+  &_hero{
+    @include container;
+    padding-top: 64px;
+    position: relative;
+    max-width: 650px;
+    width: 100%;
+    margin-left: 0;
+    margin-top: 128px;
+
+    @include md(){
+      padding-right: 0 !important;
+      margin-top: 546px;
+    }
+
+    &_ttl{
+      @include display-2;
+      position: relative;
+      width: 100%;
+      &::after{
+        color: transparent;
+        content: attr(data-ttl);
+        position: absolute;
+        left: 3px;
+        top: -12px;
+        // -webkit-text-stroke: 1px #FFB968;
+        z-index: -1;
+      }
+      &_super{
+        @include body-2;
+        position: absolute;
+        top: 12%;
+
+        @include lp(){
+          right: -52px;
+        }
+      }
+    }
+
+    &_desc{
+      @include body-1;
+      &>a, p,div,ul{
+        display: block;
+        margin-top: 16px;
+      }
+    }
+  }
+
+  &_categories{
+    @include container;
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-top: 92px;
+    gap: 32px;
+
+
+    @include md(){
+      grid-template-columns: 1fr 1fr;
+    }
+    @include lp(){
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+
+    &_item{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      min-height: 250px;
+      padding: 32px;
+      text-decoration: none;
+      --bg-opacity: 1;
+      background-color: #202022;
+      background-color: rgba(32,32,34,var(--bg-opacity));
+      transition: all .2s ease-in-out;
+      // color: $black !important;
+
+
+      @include md(){
+        min-height: 360px;
+        &:hover{
+          transform: scale(1.1);
+        }
+      }
+
+
+      // @include applyBgColors;
+
+      &:hover{
+        h2{
+         text-decoration: underline;
+        }
+      }
+      &_desc{
+        margin-top: 16px;
+        color: $text-light;
+      }
+    }
+  }
+}
