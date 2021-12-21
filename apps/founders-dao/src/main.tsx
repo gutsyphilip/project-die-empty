@@ -1,14 +1,26 @@
-import { StrictMode } from 'react';
-import * as ReactDOM from 'react-dom';
-import { BrowserRouter } from 'react-router-dom';
+import React from "react";
+import ReactDOM from "react-dom";
+import "./styles/generic.scss";
+import App from "./App.jsx";
 
-import App from './app/app';
+import { ThirdwebWeb3Provider } from '@3rdweb/hooks';
+
+
+// 4 stands for Rinkeby
+const SUPPORTED_CHAIN_IDS = [4]
+const connectors = {
+  injected: {}
+}
+
 
 ReactDOM.render(
-  <StrictMode>
-    <BrowserRouter>
+  <React.StrictMode>
+    <ThirdwebWeb3Provider
+      connectors={connectors}
+      supportedChainIds={SUPPORTED_CHAIN_IDS}
+    >
       <App />
-    </BrowserRouter>
-  </StrictMode>,
+    </ThirdwebWeb3Provider>
+  </React.StrictMode>,
   document.getElementById('root')
 );
