@@ -9,7 +9,7 @@
       "defaultConfiguration": "production",
       "options": {
         "compiler": "babel",
-        "outputPath": "dist/apps/founders-dao",
+        "outputPath": "dist/apps/exported/founders-dao",
         "index": "apps/founders-dao/src/index.html",
         "baseHref": "/",
         "main": "apps/founders-dao/src/main.tsx",
