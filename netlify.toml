@@ -1,11 +1,11 @@
 [[redirects]]
   from = "/founders-dao/*"
-  to = "/dist/apps"
+  to = "/dist/apps/exported/founders-dao"
   status = 200
 
 [[redirects]]
   from = "*"
-  to = "/dist/apps/exported/*"
+  to = "/dist/apps/exported/founders-dao"
   status = 200
 
 
