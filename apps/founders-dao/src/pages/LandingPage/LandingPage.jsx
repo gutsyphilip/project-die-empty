@@ -12,7 +12,7 @@ const LandingPage = () => {
           <h1 className={styles.LandingPage_hero_content_ttl}>foundersDAO.</h1>
           <p className={styles.LandingPage_hero_content_desc}>an inclusive community for makers and startup founders.</p>
           <div className={styles.LandingPage_hero_content_btn} onClick={() => connectWallet("injected")} >
-            Join now
+            Join now(Connect wallet)
           </div>
         </div>
       </section>
@@ -33,9 +33,9 @@ const LandingPage = () => {
                   Mint your FREE membership NFT(You will pay some vary small amount for gas fees.)
                 </li>
                 <li>
-                  Once, you have minted your NFT successfully, you will gain access to the dashboard where you can join the discord community and vote on decisions to be made.
+                  <b>WIP:</b> Once, you have minted your NFT successfully, you will gain access to the dashboard where you can join the discord community and vote on decisions to be made().
                 </li>
-                <li>WIP: The governance token $FOUNDR will be created and issued via an Airdrop to initial members and will subsequently be earned via interaction within the community. This could either be through the weekly syncs or providing support on discord. More on this later. Okay bye. </li>
+                <li><b>WIP:</b>The governance token $FOUNDR will be created and issued via an Airdrop to initial members and will subsequently be earned via interaction within the community. This could either be through the weekly syncs or providing support on discord. More on this later. Okay bye. </li>
               </ol>
             </div>
           </div>

@@ -1,0 +1,81 @@
+@import "../../styles/breakpoint";
+@import "../../styles/helpers";
+
+.DashboardPage{
+    &_hero{
+        @include container;
+        background-color:#F2F2F2;
+        min-height: calc(100vh - 8px);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+
+
+        &_content{
+            &_ttl{
+                font-style: normal;
+                font-weight: bold;
+                font-size: 36px;
+                line-height: 150%;
+                letter-spacing: -0.04em;
+            }
+
+            &_desc{
+                max-width: 465px;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 36px;
+                line-height: 120%;
+                letter-spacing: -0.02em;
+                margin-top: 168px;
+                font-size: 36px;
+            }
+
+            &_btn{
+                font-style: normal;
+                font-weight: normal;
+                font-size: 18px;
+                line-height: 120%;
+                letter-spacing: -0.02em;
+                text-decoration-line: underline;
+                color: #5E898A;
+                margin-top: 16px;
+                cursor: pointer;
+            }
+
+        }
+    }
+
+    &_about{
+        display: grid;
+        grid-template-columns: 1fr;
+
+
+        @include md(){
+            grid-template-columns: 1fr 2fr 1fr;
+            min-height: 400px;
+        }
+
+        &>:nth-child(1){
+            background: #5E898A;
+            min-height: 8px;
+
+        }
+        &>:nth-child(2){
+            background: #FFFFFF;
+            padding: 32px;
+            h4{
+                font-size: 18px;
+            }
+            p {
+                margin-top: 12px;
+                font-size: 16px;
+            }
+        }
+        &>:nth-child(3){
+            background: #F2512B;
+            min-height: 8px;
+        }
+    }
+}
