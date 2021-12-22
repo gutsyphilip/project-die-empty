@@ -11,7 +11,7 @@
         "compiler": "babel",
         "outputPath": "dist/apps/exported/founders-dao",
         "index": "apps/founders-dao/src/index.html",
-        "baseHref": "/",
+        "deployUrl": "https://philipobosi.com/founders-dao/",
         "main": "apps/founders-dao/src/main.tsx",
         "polyfills": "apps/founders-dao/src/polyfills.ts",
         "tsConfig": "apps/founders-dao/tsconfig.app.json",

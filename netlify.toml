@@ -5,7 +5,7 @@
 
 [[redirects]]
   from = "*"
-  to = "/dist/apps/exported/founders-dao"
+  to = "/dist/apps/exported/founders-dao/*"
   status = 200
 
 
