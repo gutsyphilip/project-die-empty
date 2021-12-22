@@ -1,7 +1,6 @@
 {
   "name": "founders-dao",
   "version": "0.1.0",
-  "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^12.0.0",
@@ -17,9 +16,9 @@
     "web-vitals": "^2.1.0"
   },
   "scripts": {
-    "start": "craco start",
-    "build": "BUILD_PATH=../../dist/apps/exported/founders-dao craco build",
-    "test": "craco test",
+    "start": "npx craco start",
+    "build": "BUILD_PATH=../../dist/apps/exported/founders-dao npx craco build",
+    "test": "npx craco test",
     "eject": "react-scripts eject",
     "serve": "npm start"
   },
