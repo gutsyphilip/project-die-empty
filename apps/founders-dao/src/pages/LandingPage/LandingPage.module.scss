@@ -5,10 +5,13 @@
     &_hero{
         @include container;
         background-color:#F2F2F2;
+        min-height: calc(100vh - 120px);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
 
 
         &_content{
-            padding: 240px 0 120px 0;
 
             &_ttl{
                 font-style: normal;

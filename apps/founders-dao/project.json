@@ -28,6 +28,10 @@
             {
               "replace": "apps/founders-dao/src/environments/environment.ts",
               "with": "apps/founders-dao/src/environments/environment.prod.ts"
+            },
+            {
+              "replace": "apps/founders-dao/src/index.html",
+              "with": "apps/founders-dao/src/index-prod.html"
             }
           ],
           "optimization": true,
