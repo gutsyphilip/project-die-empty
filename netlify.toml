@@ -3,3 +3,9 @@
   to = "/dist/apps/founders-dao/index.html"
   status = 200
 
+[[redirects]]
+  from = "*"
+  to = "/dist/apps/founders-dao/*"
+  status = 200
+
+
