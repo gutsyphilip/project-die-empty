@@ -4,7 +4,7 @@ date: "2020-05-23"
 excerpt: "In this article, we examine how to properly store, transform and deliver media files i.e images and videos in JAMstack applications using Cloudinary. The techniques explored herein are also very useful within other kinds of web applications as well."
 permalink: "media-files-in-jamstack-using-cloudinary"
 tags: cloudinary, web tools
-image: /media-files-cloudinary.png
+img: /media-files-cloudinary.png
 author: worldclassdev
 ---
 
