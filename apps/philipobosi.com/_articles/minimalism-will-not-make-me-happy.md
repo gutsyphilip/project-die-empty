@@ -1,7 +1,7 @@
 ---
 title: I learnt that minimalism would not make me happy.
 date: "2021-12-19"
-excerpt: "A honest examination of my experience with minimalism and the lessons thereof."
+excerpt: "An honest examination of my experience with minimalism and the lessons thereof."
 permalink: "minimalism-will-not-make-me-happy"
 tags: minimalism
 img: /minimalism-will-not-make-me-happy.png
