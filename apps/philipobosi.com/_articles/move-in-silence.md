@@ -26,7 +26,7 @@ I remember growing up, the equation for success as a young dreamer was pretty st
 
 As someone who wanted to be great at anything, all you had to do was work hard. Dedicate yourself to the cause and become good at whatever it is you do, then the opportunities will come running. Honestly, I loved this equation so much. I love the clarity and a clear sense of how things work and what needs to be done. However, I very quickly realized that the world around me had evolved and this was no longer the case. Then a new wave of advice came. I’m pretty sure you’ve heard this one before.
 
-“Work smart, not hard”. Eventually, the wise men of this world seemed to have figured out that there’s often more to success beyond the effect of your hard work and perseverance. But what does it even mean to work smart? While I’m definitely in no position to speak for “the wise men”, I guess they figured that very often, success requires a more efficient dispensation of ones’ energy and available resources to reach the desired outcome. In short, “strategy matters”. So, is this it? Have we figured it out? Not yet.
+“Work smart, not hard” 🤡. Eventually, the wise men of this world seemed to have figured out that there’s often more to success beyond the effect of your hard work and perseverance. But what does it even mean to work smart? While I’m definitely in no position to speak for “the wise men”, I guess they figured that very often, success requires a more efficient dispensation of ones’ energy and available resources to reach the desired outcome. In short, “strategy matters”. So, is this it? Have we figured it out? Not yet.
 
 “Another important component of success is luck”, they say. Luck? I don’t get it. Do you mean my strategy, dedication and actions aren’t enough to guarantee success at anything? This was the most difficult pill of “the successful man prescription” to swallow. It turns out, in some cases, you may do everything right and still not succeed. The “universe” needs to be in your favour or you need to hope for some coincidental alignment of favourable events. Some have gone further to explain how luck isn’t random and we can create our luck. Is that true? Perhaps. But I won’t let that derail my thoughts here.
 
@@ -48,7 +48,7 @@ That’s where I think the problem lies. More than the decision to move in silen
 
 For me, I’m on a campaign to live openly and die empty. Thus I’m sharing everything I think anyone might find useful. I have come to believe that my life is not worth anything if lived in a silo. The thought that my life, work, and experiences could in some way make things better for someone is a solid motivation for me to keep living and get through life’s messiness. So, I’ll stay true to myself and I hope you do too.
 
-To dying empty.
+To dying empty 🥂.
 
 
 
