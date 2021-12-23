@@ -20,11 +20,12 @@ const ArticlesPage: React.FC<ArticlesPageProps> = ({ allPosts }) => {
         </p>
       </header>
       <section className={styles.ArticlesPage_posts}>
-        {allPosts.map(({ title, slug }) => {
+        {allPosts.map(({ title, slug, excerpt }) => {
           return (
             <Link href={`/articles/${slug}`} key={slug}>
               <a className={styles.ArticlesPage_posts_item}>
                 <h2 className={styles.ArticlesPage_posts_item_ttl}>{title}</h2>
+                <p className={styles.ArticlesPage_posts_item_desc}>{excerpt}</p>
               </a>
             </Link>
           );
