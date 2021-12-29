@@ -7,13 +7,13 @@
 @import "font";
 
 ::selection {
-   background: $theme-primary;
+  //  background: $theme-primary;
 }
 
 html {
   font-size: 100%;
   scroll-behavior: smooth;
-  // cursor: url('../assets/images/custom-cursor.png'), auto; 
+  // cursor: url('../assets/images/custom-cursor.png'), auto;
   // cursor: none;
   // background: url('../../static/dot-grid-bg.png');
 }
@@ -28,10 +28,11 @@ body {
   font-style: normal;
   font-weight: normal;
   margin: 0 auto;
-   color: $text-dark;
-   //color: #FFF !important;
-   max-width: 1600px;
-
+  color: $text-dark;
+  max-width: 1600px;
+  // border-top: 0.35rem solid $black;
+  overflow-x: hidden;
+  background-color: $bg-light;
 }
 
 *,
@@ -58,32 +59,7 @@ button {
 }
 
 a {
-  border-bottom: 2px solid #E2DDCA;
-  line-height: 1.8;
-  font-size: inherit;
-  font-weight: inherit;
-  font-style: inherit;
-  text-decoration: none;
-  width: fit-content;
-  transition: all .3s ease-out;
-  background-image: linear-gradient(to bottom, #FEF5DF 0%, #FEF5DF 100%);
-  background-repeat: no-repeat;
-  background-size: 100% 0;
-  background-position: 0 111%;
-  padding: 2px 2px 0px 0;
-
-
-
-
-  &:hover {
-    text-decoration: none;
-    background-size: 100% 88%;
-    cursor: pointer;
-    border-bottom: 2px solid #f8cd5f;
-  }
-  // &::after {
-  //   content: ' → ' attr(href); /* show an arrow before the href */
-  // }
+ text-decoration: underline;
 }
 
 h1,

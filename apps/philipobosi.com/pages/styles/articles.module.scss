@@ -3,67 +3,45 @@
 @import "../../styles/typography";
 
 .ArticlesPage{
-  display: grid;
-  grid-template-columns: 1fr;
+  @include container;
+  max-width: 650px;
+  width: 100%;
+  margin-left: 0;
+  overflow-x: hidden;
+  margin-top: 16px;
+  padding-right: 0 !important;
 
-  @include lp(){
-    height: 100vh;
-    grid-template-columns: 1.4fr 2fr;
-    grid-template-rows: minmax(0, 100vh) auto;
-    overflow: hidden;
-  }
+
 
   &_hero{
-    @include container;
-    padding-top: 48px;
     padding-bottom: 48px;
 
     @include lp(){
-      padding-top: 64px;
       padding-bottom: 64px;
-      border-right: 2px solid $theme-light;
-      padding-top: 128px;
-      height: 100vh;
-      max-height: 100vh;
     }
     &_ttl{
       @include display-2;
-      position: relative;
       width: fit-content;
-      // border: 1px solid red;
       &_super{
         @include body-2;
-        position: absolute;
-        top: 12%;
-        right: -52px;
       }
     }
 
     &_desc{
       @include body-2;
       margin-top: 8px;
-      max-width: 624px;
-      color: $text-light;
+
     }
   }
 
   &_posts{
     padding-bottom: 64px;
-    margin-left: 32px;
-    overflow-y: scroll;
-    // height: 100vh;
+    // margin-left: 32px;
 
-    @include md(){
-      padding-top: 92px;
-      padding-bottom: 92px;
-      margin-left: 0;
-    }
     &_item{
       display: flex;
       flex-direction: column;
       justify-content: center;
-      max-width: 656px;
-      padding: 20px;
 
       &,&:hover{
         background: none;
@@ -77,18 +55,17 @@
       }
 
       &:not(:first-child){
-        margin-top: 16px;
-        padding-top: 16px;
-        border-top: 1px solid $theme-light;
+        margin-top: 32px;
       }
 
       &_ttl{
+        @include heading-2;
         font-weight: 500;
+        text-decoration: underline;
       }
       &_desc{
         margin-top: 16px;
         @include body-2;
-        color: $text-light;
       }
 
       &_link{
@@ -104,7 +81,7 @@
   grid-template-columns: 1fr;
 
  &_main{
-  margin-top: 256px;
+  margin-top: 16px;
   padding-bottom: 64px;
   border-bottom: 2px solid $theme-light;
 
@@ -117,6 +94,7 @@
       @include display-2;
       position: relative;
       width: fit-content;
+      text-transform: uppercase;
     }
 
   }

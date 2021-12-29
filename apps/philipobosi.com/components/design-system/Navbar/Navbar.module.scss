@@ -8,14 +8,37 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding-top: 24px !important;
+  padding-bottom: 24px !important;
+  position: fixed;
+  top: 0;
 
 
   &_logo{
     @include heading-5;
-    font-weight: 600 !important;
-    line-height: 40px;
-    top: 120px !important;
+    width: fit-content;
+    text-decoration: none;
+  }
 
+  &_nav{
+    display: flex;
+    align-items: center;
+
+    &_link{
+      @include heading-3;
+      text-decoration: none;
+      &:hover{
+        text-decoration: underline;
+      }
+      &:not(:first-child){
+        margin-left: 16px;
+      }
+      &:not(:last-child){
+        &::after{
+          content: ",";
+        }
+      }
+    }
   }
 
   &_about{

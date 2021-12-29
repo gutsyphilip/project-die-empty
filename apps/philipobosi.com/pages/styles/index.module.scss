@@ -12,16 +12,14 @@
 
   &_hero{
     @include container;
-    padding-top: 64px;
     position: relative;
     max-width: 650px;
     width: 100%;
     margin-left: 0;
-    margin-top: 128px;
+    margin-top: 16px;
 
     @include md(){
       padding-right: 0 !important;
-      margin-top: 546px;
     }
 
     &_ttl{
@@ -34,7 +32,6 @@
         position: absolute;
         left: 3px;
         top: -12px;
-        // -webkit-text-stroke: 1px #FFB968;
         z-index: -1;
       }
       &_super{
@@ -49,8 +46,10 @@
     }
 
     &_desc{
-      @include body-1;
+      @include body-2;
+      // text-transform: uppercase;
       &>a, p,div,ul{
+        @include body-2;
         display: block;
         margin-top: 16px;
       }
