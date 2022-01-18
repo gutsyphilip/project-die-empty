@@ -1,6 +1,5 @@
 import type { NextPage } from 'next';
 import Link from 'next/link';
-import Page from '../../components/design-system/Page';
 
 import styles from 'styles/pages/articles.module.scss';
 import { getAllPosts } from 'helpers/markdownLoader';
