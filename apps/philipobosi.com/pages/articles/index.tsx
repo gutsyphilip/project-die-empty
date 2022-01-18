@@ -1,49 +1,54 @@
-import type { NextPage } from "next";
-import Link from "next/link";
-import Page from "../../components/design-system/Page";
+import type { NextPage } from 'next';
+import Link from 'next/link';
+import Page from '../../components/design-system/Page';
 
-import styles from "../styles/articles.module.scss";
-import { getAllPosts } from "helpers/markdownLoader";
+import styles from 'styles/pages/articles.module.scss';
+import { getAllPosts } from 'helpers/markdownLoader';
+import Hero from 'components/Hero';
 
 type ArticlesPageProps = NextPage & { allPosts: any[] };
 
 const ArticlesPage: React.FC<ArticlesPageProps> = ({ allPosts }) => {
   return (
-    <Page className={styles.ArticlesPage}>
-      <header className={styles.ArticlesPage_hero}>
-        <h1 className={styles.ArticlesPage_hero_ttl}>R/ARTICLES</h1>
-        <p className={styles.ArticlesPage_hero_desc}>
-          I like to get things out of my head in a structured manner. Could be
-          anything really. More recently it's mostly ideas, opinions, technical
-          knowledge, experiences around product, startups, the creator economy
-          and web3.
-        </p>
-      </header>
-      <section className={styles.ArticlesPage_posts}>
-        {allPosts.map(({ title, slug, excerpt, content }) => {
-          return (
-            <Link href={`/articles/${slug}`} key={slug}>
-              <a className={styles.ArticlesPage_posts_item}>
-                <h2 className={styles.ArticlesPage_posts_item_ttl}>{title}</h2>
-                {/* <p className={styles.ArticlesPage_posts_item_desc}>{excerpt}</p> */}
+    <div>
+      <Hero>
+        <div className={styles.articles_hero}>
+          <p className={styles.articles_hero_desc}>
+            “I like to get things out of my head in a structured manner. Could
+            be anything really. More recently it's ideas, opinions and learnings
+            from work, building product, startups, the creator economy and web
+            3.0”
+          </p>
+        </div>
+      </Hero>
+      <div className={styles.articles_main}>
+        <header>
+          <h5>LATEST READS</h5>
+        </header>
+        <div className={styles.articles_main_list}>
+          {allPosts?.map((article: any) => (
+            <Link key={article.slug} href={`/articles/${article.slug}`}>
+              <a className={styles.articles_main_list_item}>
+                {article.title}
+                <span>JAN 2022</span>
               </a>
             </Link>
-          );
-        })}
-      </section>
-    </Page>
+          ))}
+        </div>
+      </div>
+    </div>
   );
 };
 
 export async function getStaticProps() {
   const allPosts = getAllPosts([
-    "title",
-    "date",
-    "slug",
-    "author",
-    "coverImage",
-    "excerpt",
-    "content",
+    'title',
+    'date',
+    'slug',
+    'author',
+    'coverImage',
+    'excerpt',
+    'content',
   ]);
 
   return {

@@ -1,12 +1,11 @@
-import React from "react";
-import type { AppProps } from "next/app";
-import { useRouter } from "next/router";
+import React from 'react';
+import type { AppProps } from 'next/app';
+import { useRouter } from 'next/router';
 // import { LocomotiveScrollProvider } from "react-locomotive-scroll";
 
-import Navbar from "../components/design-system/Navbar/Navbar";
-
-import "../styles/generic.scss";
-import "../styles/_prism.scss";
+import '../styles/global.scss';
+import '../styles/_prism.scss';
+import Layout from 'components/Layout';
 
 const MyApp = ({ Component, pageProps }: AppProps) => {
   const router = useRouter();
@@ -14,8 +13,7 @@ const MyApp = ({ Component, pageProps }: AppProps) => {
   const containerRef = React.useRef(null);
 
   return (
-    <section>
-      <Navbar />
+    <Layout>
       {/* <LocomotiveScrollProvider
         options={{
           smooth: true,
@@ -24,11 +22,11 @@ const MyApp = ({ Component, pageProps }: AppProps) => {
         watch={[router.asPath]}
         containerRef={containerRef}
       > */}
-      <main data-scroll-container ref={containerRef} style={{ minHeight: "100vh" }}>
-        <Component {...pageProps} />
-      </main>
+      {/* <main data-scroll-container ref={containerRef} style={{ minHeight: "100vh" }}> */}
+      <Component {...pageProps} />
+      {/* </main> */}
       {/* </LocomotiveScrollProvider> */}
-    </section>
+    </Layout>
   );
 };
 

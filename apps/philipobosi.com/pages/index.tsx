@@ -1,46 +1,75 @@
-import type { NextPage } from "next";
-import Link from "next/link";
-import Page from "../components/design-system/Page";
-import pageData from "data/pageData/index";
-import styles from "./styles/index.module.scss";
+import React from 'react'
+import Hero from 'components/Hero';
+import Link from 'next/link';
 
-const Home: NextPage = () => {
-  return (
-    <Page className={styles.IndexPage}>
-      <div style={{ position: "relative" }}>
-        <header className={styles.IndexPage_hero}>
-          <h1 className={styles.IndexPage_hero_ttl} data-ttl="Hello! I'm Philip.">PHILIPOBOSI&copy;</h1>
-          <div className={styles.IndexPage_hero_desc}>
-            <p>
-              I am archiving the most useful parts of my life on the internet in hopes of dying empty(bold… I know). I am a creator who loves to ideate and bring things to life. Could be music, videos, or digital products.
-            </p>
-            <p>
-              Speaking of digital products, I have been privileged to help build software at several startups including <a
-                href="https://54gene.com" target="_blank">54gene</a>, <a href="https://kudi.com" target="_blank">Kudi</a> and <a href="https://trybrass.com" target="_blank">Brass</a>.
-            </p>
 
-            <p>I <Link href="/articles"><a>write articles</a></Link> on topics ranging from my career to technical stuff and general experiences.</p>
-            <p>I keep <a href="https://www.getrevue.co/profile/gutsyphilip" target="_blank">a diary on my experiences as a creator and my journey through making things.</a></p>
-          </div>
-        </header>
-      </div>
+import styles from 'styles/pages/index.module.scss';
 
-      <section className={styles.IndexPage_categories}>
-        {/* {pageData.categories.map(({ title, desc, url }) => {
-                    return (
-                        <Link href={url} key={title} scroll>
-                            <a className={styles.IndexPage_categories_item}>
-                                <h2 className={styles.IndexPage_categories_item_ttl}>
-                                    {title}
-                                </h2>
-                                <p className={styles.IndexPage_categories_item_desc}>{desc}</p>
-                            </a>
-                        </Link>
-                    );
-                })} */}
-      </section>
-    </Page>
-  );
+
+type IndexData = {
+  archives: Array<{ name: string; url: string }>;
+  otherAchives: Array<{ name: string; to: string }>;
 };
 
-export default Home;
+const PAGE_DATA: IndexData = {
+  archives: [
+    {
+      name: 'About',
+      url: 'about',
+    },
+    {
+      name: 'Articles',
+      url: 'articles',
+    },
+    {
+      name: 'Work',
+      url: 'work',
+    },
+    {
+      name: 'Newsletter',
+      url: 'newsletter',
+    },
+  ],
+  otherAchives: [
+    {
+      name: 'The Diary of a Creator',
+      to: 'https://diaryofcreator.com',
+    },
+    {
+      name: 'Pod Wey Don Cast',
+      to: 'demos/params',
+    },
+  ],
+};
+export default function Index() {
+  const { archives, otherAchives } = PAGE_DATA;
+
+  return (
+    <div>
+      <Hero>
+        <div className={styles.index_hero}>
+          <p className={styles.index_hero_desc}>
+            I am a creator, archiving the most useful parts of my life on the internet in hopes of dying empty.
+          </p>
+        </div>
+      </Hero>
+      <div className={styles.index_main}>
+        <div className={styles.index_main_links}>
+          {
+            archives.map(({ name, url }) => {
+              return <Link href={url} key={name}>{name}</Link>
+            })
+          }
+        </div>
+        <div className={styles.index_main_others}>
+          <h6>OTHER ARCHIVES</h6>
+          {
+            otherAchives.map(({ name, to }) => {
+              return <a href={to} target="_blank" rel='noreferrer' key={name}>{name}</a>
+            })
+          }
+        </div>
+      </div>
+    </div>
+  );
+}

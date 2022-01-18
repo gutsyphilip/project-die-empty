@@ -2,6 +2,7 @@
 //   font-family: "Hoefler Text";
 //   src: url("../assets/fonts/Hoefler-Text.ttf") format("ttf");
 // }
+
 // @font-face {
 //   font-family: "Hoefler Text";
 //   src: url("../assets/fonts/Hoefler-Text.ttf") format("ttf");
@@ -16,25 +17,30 @@
 //   src: url('../assets/fonts/avenir-next/AvenirNextLTPro-It.otf') format('otf');
 // }
 
-// @font-face {
-//   font-family: 'Avenir Next';
-//   font-style: normal;
-//   font-weight: 400;
-//   src: url('../assets/fonts/avenir-next/AvenirNextLTPro-Regular.otf') format('otf');
+@font-face {
+  font-family: 'Söhne';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../assets/fonts/Sohne/Söhne-Buch.otf') format('otf');
+}
 
-// }
+@font-face {
+  font-family: 'Söhne';
+  font-style: normal;
+  font-weight: 500;
+  src: url('../assets/fonts/Sohne/Söhne-Kräftig.otf') format('otf');
+}
 
-// @font-face {
-//   font-family: 'Avenir Next';
-//   font-style: normal;
-//   font-weight: 500;
-//   src: url('../assets/fonts/avenir-next/AvenirNextLTPro-MediumCn.otf') format('otf');
+@font-face {
+  font-family: 'Söhne';
+  font-style: normal;
+  font-weight: 600;
+  src: url('../assets/fonts/Sohne/Söhne-Halbfett.otf') format('otf');
+}
 
-// }
-
-// @font-face {
-//   font-family: 'Avenir Next';
-//   font-style: normal;
-//   font-weight: 600;
-//   src: url('../assets/fonts/avenir-next/AvenirNextLTPro-Bold.otf') format('otf');
-// }
+@font-face {
+  font-family: 'Söhne';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../assets/fonts/Sohne/Söhne-Dreiviertelfett.otf') format('otf');
+}
