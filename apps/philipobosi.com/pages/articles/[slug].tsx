@@ -6,6 +6,7 @@ import { NextPage } from 'next';
 
 import styles from '../styles/articles.module.scss';
 import SEO from 'components/SEO';
+import Hero from 'components/Hero';
 
 type ArticlePage = NextPage & { post: any };
 
@@ -29,11 +30,13 @@ const ArticlePage: React.FC<ArticlePage> = ({ post }) => {
           />
           <section className={styles.ArticlePage}>
             <main className={styles.ArticlePage_main}>
-              <header className={styles.ArticlePage_main_header}>
+              {/* <header className={styles.ArticlePage_main_header}> */}
+              <Hero>
                 <h1 className={styles.ArticlePage_main_header_ttl}>
                   {post.title}
                 </h1>
-              </header>
+              </Hero>
+              {/* </header> */}
 
               {/* Render meta tags */}
               <div

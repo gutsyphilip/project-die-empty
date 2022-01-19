@@ -2,79 +2,6 @@
 @import "../../styles/helpers";
 @import "../../styles/typography";
 
-.ArticlesPage{
-  @include container;
-  max-width: 650px;
-  width: 100%;
-  margin-left: 0;
-  overflow-x: hidden;
-  margin-top: 16px;
-  padding-right: 0 !important;
-
-
-
-  &_hero{
-    padding-bottom: 48px;
-
-    @include lp(){
-      padding-bottom: 64px;
-    }
-    &_ttl{
-      @include display-2;
-      width: fit-content;
-      &_super{
-        @include body-2;
-      }
-    }
-
-    &_desc{
-      @include body-2;
-      margin-top: 8px;
-
-    }
-  }
-
-  &_posts{
-    padding-bottom: 64px;
-    // margin-left: 32px;
-
-    &_item{
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-
-      &,&:hover{
-        background: none;
-        border-bottom: none;
-      }
-
-      &:hover{
-        h2{
-          text-decoration: underline;
-        }
-      }
-
-      &:not(:first-child){
-        margin-top: 32px;
-      }
-
-      &_ttl{
-        @include heading-2;
-        font-weight: 500;
-        text-decoration: underline;
-      }
-      &_desc{
-        margin-top: 16px;
-        @include body-2;
-      }
-
-      &_link{
-        margin-top: 16px;
-        display: block;
-      }
-    }
-  }
-}
 
 .ArticlePage{
   display: grid;
@@ -83,18 +10,14 @@
  &_main{
   margin-top: 16px;
   padding-bottom: 64px;
-  border-bottom: 2px solid $theme-light;
 
-  @include lp(){
-    border-right: 2px solid $theme-light;
-  }
   &_header{
     @include container;
+    margin-right: 0;
     &_ttl{
       @include display-2;
       position: relative;
       width: fit-content;
-      text-transform: uppercase;
     }
 
   }
@@ -104,14 +27,14 @@
     max-width: 650px;
     overflow: hidden;
     margin-left: 0;
-    margin-top: 24px;
+    padding-left: 0 !important;
+    margin-top: 48px;
+    font-weight: 400;
+    // font-family: Baskerville;
 
     @include md(){
       padding-right: 0 !important;
     }
-
-
-
 
 
     h1,

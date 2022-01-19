@@ -1,5 +1,5 @@
 ---
-title: Move in silence… yen yen yen.
+title: Move in silence.
 date: "2021-12-23"
 excerpt: "It's  been a struggle deciding whether to be public about my work, achievements and successes. My natural programming is to move in silence and not over share. This is an attempt to reflect on this choice."
 permalink: "move-in-silence"
